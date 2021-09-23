@@ -9,7 +9,7 @@ import "../proxy/utils/Initializable.sol";
  * @dev Context variant with ERC2771 support.
  */
 abstract contract ERC2771ContextUpgradeable is Initializable, ContextUpgradeable {
-    address private _trustedForwarder;
+    address _trustedForwarder;
 
     function __ERC2771Context_init(address trustedForwarder) internal initializer {
         __Context_init_unchained();
